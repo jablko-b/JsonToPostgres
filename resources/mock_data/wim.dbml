@@ -1,0 +1,62 @@
+Table Measurements {
+  pkMeasurement int [pk]
+  id varchar
+  timestamp timestamp
+}
+
+Table VDRs {
+  vdr_id int [pk, increment] // Auto-increment primary key
+  source varchar
+  measurement_id int [ref: > Measurements.pkMeasurement]
+  MetrologicalID varchar
+  LaneNo int
+  ErrorFlag int
+  WarningFlag int
+  Direction int
+  MoveStatus int
+  FrontToFront float
+  BackToFront float
+  FrontOverhang float
+  Duration float
+  VehicleLength float
+  GrossWeight int
+  LeftWeight int
+  RightWeight int
+  Velocity float
+  WheelBase float
+  AxlesCount int
+  MassUnit varchar
+  VelocityUnit varchar
+  DistanceUnit varchar
+  Marked boolean
+  MarkedViolations boolean
+  VehicleID varchar
+  StartTime bigint
+  StartTimeStr varchar
+  // Weitere Felder hier hinzufügen
+}
+
+Table Axles {
+  axle_id int [pk, increment] // Auto-increment primary key
+  vdr_id int [ref: > VDRs.vdr_id]
+  ID int
+  GroupID int
+  Velocity float
+  Weight int
+  LeftWheelWeight int
+  RightWheelWeight int
+  LeftRightImbalance float
+  Distance float
+  Track int
+  PatchLengthRight float
+  PatchLengthLeft float
+  PatchWidthRight float
+  PatchWidthLeft float
+  PositionRight float
+  PositionLeft float
+  SDTireRight char
+  SDTireLeft char
+  TireStatusRight varchar
+  TireStatusLeft varchar
+  // Weitere Felder hier hinzufügen
+}

@@ -1,0 +1,12 @@
+__pycache__/
+measurementID.cfg
+
+# Sphinx documentation build output
+docs/build/
+
+# Sphinx doctrees
+docs/source/doctrees/
+
+# Sphinx temporary files
+docs/source/.buildinfo
+docs/source/_sources/
