@@ -1,7 +1,7 @@
 # Weight-in-Motion (WIM) Data Processing Application
 
 ## Overview
-This Weight-in-Motion (WIM) Data Processing Application, developed within GitHub Codespaces, is designed to simulate data processing within a WIM station from the sensor to the visualization layer. The application integrates a WIM server simulation, an API for data retrieval, data transformation, and database management. It includes a PostgreSQL database for data storage and a Grafana server for data visualization.
+This Weight-in-Motion (WIM) Data Processing Application, developed within GitHub Codespaces, is designed to simulate data processing within a WIM station from the sensor to the visualization layer. The application integrates a WIM server simulation with a RESTful interface, an API for data retrieval, data transformation, and database management. It includes a PostgreSQL database for data storage and a Grafana server for data visualization.
 
 ## GitHub Codespaces
 This project is configured for development or use in GitHub Codespaces. To use this code:
